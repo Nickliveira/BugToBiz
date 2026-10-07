@@ -1,0 +1,14 @@
+<resources>
+    <color name="background">#F6F8F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#192C25</color>
+    <color name="muted">#52665B</color>
+    <color name="green">#176148</color>
+    <color name="green_dark">#163C2E</color>
+    <color name="mint">#E8F3EB</color>
+    <color name="mint_text">#D3E8D7</color>
+    <color name="border">#DEE7DF</color>
+    <color name="amber_background">#FFF4DF</color>
+    <color name="amber_text">#77501B</color>
+    <color name="white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,146 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OpportunityDetailActivity"
+    tools:theme="@style/Theme.BugToBiz"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="@dimen/screen_padding"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/back"/>
+
+            <TextView style="@style/Text.BugToBiz.Title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:textSize="18sp"
+                android:text="@string/detail_page_title"/>
+        </LinearLayout>
+
+        <TextView style="@style/Text.BugToBiz.Label"
+            android:id="@+id/category"
+            android:layout_marginTop="16dp"
+            tools:text="Vendas"/>
+
+        <TextView style="@style/Text.BugToBiz.Title"
+            android:id="@+id/title"
+            android:layout_marginTop="6dp"
+            android:textSize="24sp"
+            android:accessibilityHeading="true"
+            tools:text="Pedidos pelo WhatsApp"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/audience"
+            android:layout_marginTop="6dp"
+            tools:text="Confeitarias de bairro"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/border"/>
+
+        <TextView style="@style/Text.BugToBiz.Title"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="@string/problem_title"
+            android:accessibilityHeading="true"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/problem"
+            android:layout_marginTop="8dp"
+            tools:text="Os pedidos chegam pelo WhatsApp e ficam misturados com as conversas."/>
+
+        <TextView style="@style/Text.BugToBiz.Title"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="@string/solution_title"
+            android:accessibilityHeading="true"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/solution"
+            android:layout_marginTop="8dp"
+            tools:text="Um app para anotar os pedidos e consultar as datas de entrega."/>
+
+        <TextView style="@style/Text.BugToBiz.Title"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="@string/mvp_title"
+            android:accessibilityHeading="true"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/firstVersion"
+            android:layout_marginTop="8dp"
+            tools:text="Cadastro com nome do cliente, produto e data. Uma lista para marcar os pedidos entregues."/>
+
+        <LinearLayout
+            android:id="@+id/noteCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView style="@style/Text.BugToBiz.Title"
+                android:textSize="18sp"
+                android:text="@string/note_title"/>
+
+            <TextView
+                android:id="@+id/note" style="@style/Text.BugToBiz.Body"
+                android:layout_marginTop="8dp"
+                tools:text="Pensado para quem trabalha por encomenda, como bolos e doces."/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/border"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:layout_marginTop="16dp"
+            android:text="@string/status_label"
+            android:textSize="13sp"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/investigationStatus"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/green"
+            android:accessibilityLiveRegion="polite"
+            tools:text="Não selecionada"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/investigateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:letterSpacing="0"
+            app:cornerRadius="8dp"
+            tools:text="Quero investigar"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

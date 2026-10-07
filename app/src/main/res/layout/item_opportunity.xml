@@ -1,0 +1,48 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity"
+    tools:theme="@style/Theme.BugToBiz"
+    style="@style/Widget.BugToBiz.Card"
+    android:clickable="true"
+    android:focusable="true"
+    android:screenReaderFocusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView style="@style/Text.BugToBiz.Label"
+            android:id="@+id/category"
+            tools:text="Vendas"/>
+
+        <TextView style="@style/Text.BugToBiz.Title"
+            android:id="@+id/title"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            tools:text="Pedidos pelo WhatsApp"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/audience"
+            android:layout_marginTop="4dp"
+            android:textSize="13sp"
+            tools:text="Confeitarias de bairro"/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/summary"
+            android:layout_marginTop="10dp"
+            tools:text="É difícil acompanhar os pedidos no meio das mensagens."/>
+
+        <TextView style="@style/Text.BugToBiz.Body"
+            android:id="@+id/status"
+            android:layout_marginTop="8dp"
+            android:minHeight="32dp"
+            android:gravity="center_vertical"
+            app:drawableEndCompat="@drawable/ic_arrow"
+            android:textColor="@color/green"
+            android:textSize="13sp"
+            tools:text="Ver ideia"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

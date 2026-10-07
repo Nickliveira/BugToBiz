@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt">
+    <string name="app_name">BugToBiz</string>
+    <string name="board_title">Ideias para pequenos negócios</string>
+    <string name="board_description">Escolha um problema para ver uma possível solução.</string>
+    <string name="investigation_count">%1$d em investigação</string>
+    <string name="explore_opportunity">Ver ideia</string>
+    <string name="investigating">Em investigação</string>
+    <string name="back">Voltar à lista</string>
+    <string name="detail_page_title">Detalhes da ideia</string>
+    <string name="problem_title">Problema</string>
+    <string name="solution_title">Ideia de solução</string>
+    <string name="mvp_title">Primeira versão</string>
+    <string name="note_title">Observação</string>
+    <string name="status_label">Status</string>
+    <string name="idea_to_explore">Não selecionada</string>
+    <string name="start_investigation">Quero investigar</string>
+    <string name="remove_investigation">Parar de investigar</string>
+    <string name="added_to_investigation">Ideia selecionada.</string>
+    <string name="removed_from_investigation">Seleção removida.</string>
+    <string name="opportunity_not_found">Ideia não encontrada.</string>
+    <plurals name="opportunity_count">
+        <item quantity="one">%1$d problema cadastrado</item>
+        <item quantity="other">%1$d problemas cadastrados</item>
+    </plurals>
+</resources>
